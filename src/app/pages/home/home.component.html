@@ -1,7 +1,7 @@
 
 <span>
 @for(plate of plates; track plate.platenum) {
-  <button mat-button="filled" (click)="setPlateNo(plate.platenum)">{{ plate.label }}</button>
+  <button class="plateNumber" (click)="setPlateNo(plate.platenum)">{{ plate.label }}</button>
 }
 </span>
 <!-- set this button to the right end of the display  -->
