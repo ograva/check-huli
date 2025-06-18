@@ -1,0 +1,37 @@
+<!-- material form to edit plate information -->
+<mat-toolbar color="primary">
+    @if(plateInfo.label != '') {
+        <span>Edit Plate Information</span>
+    } @else{
+        <span>Enter Plate Information</span>
+      }
+  
+</mat-toolbar>
+<form>
+
+
+  <mat-form-field appearance="fill">
+    <mat-label>Plate Number</mat-label>
+    <input matInput [(ngModel)]="plateInfo.platenum" name="platenum" required (change)="checkPlateNum()">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>MV Number</mat-label>
+    <input matInput [(ngModel)]="plateInfo.mvNo" name="mvNo" required (change)="checkMvNo()">
+  </mat-form-field>
+
+<mat-form-field appearance="fill">
+    <mat-label>Label</mat-label>
+    <input matInput [(ngModel)]="plateInfo.label" name="label" required>
+</mat-form-field>
+
+<button mat-raised-button color="primary" (click)="savePlate()">Save</button>
+</form>
+
+@if(plateInfo.label != ''){
+<button mat-button (click)="clearPlate()">Clear</button>
+<button mat-button color="warn" (click)="deletePlate()">Delete</button>
+}
+
+<!-- button to return to dashboard -->
+<button mat-button (click)="goToDashboard()">Back to Dashboard</button>

@@ -1,0 +1,14 @@
+
+<span>
+@for(plate of plates; track plate.platenum) {
+  <button mat-button="filled" (click)="setPlateNo(plate.platenum)">{{ plate.label }}</button>
+}
+</span>
+<!-- set this button to the right end of the display  -->
+<span class="edit-plate-button">
+  <button mat-icon-button (click)="editPlate()" aria-label="Edit Plate Information">
+    <mat-icon>edit</mat-icon>
+  </button>
+</span>
+
+<iframe [src]="urlSafe" width="100%" height="600px" allowfullscreen></iframe>
