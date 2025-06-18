@@ -1,9 +1,9 @@
 <!-- material form to edit plate information -->
 <mat-toolbar color="primary">
-    @if(plateInfo.label != '') {
-        <span>Edit Plate Information</span>
+    @if( newVehicle ) {
+        <span>Enter Vehicle Information</span>
     } @else{
-        <span>Enter Plate Information</span>
+        <span>Edit Vehicle Information</span>
       }
   
 </mat-toolbar>
@@ -27,11 +27,15 @@
 
 <button mat-raised-button color="primary" (click)="savePlate()">Save</button>
 </form>
-
+<div>
 @if(plateInfo.label != ''){
 <button mat-button (click)="clearPlate()">Clear</button>
+@if(!newVehicle){
 <button mat-button color="warn" (click)="deletePlate()">Delete</button>
 }
-
+}
+</div>
+<div>
 <!-- button to return to dashboard -->
 <button mat-button (click)="goToDashboard()">Back to Dashboard</button>
+</div>

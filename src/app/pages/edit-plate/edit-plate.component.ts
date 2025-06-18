@@ -17,6 +17,8 @@ export class EditPlateComponent implements OnInit {
     mvNo: '',
   };
 
+  public newVehicle:boolean = true; 
+
   constructor(private router: Router) {
     // Initialization logic can go here
   }
@@ -96,6 +98,7 @@ export class EditPlateComponent implements OnInit {
     const plate = plates.find((p: any) => p.platenum === plateNum);
     if (plate) {
       this.plateInfo = { ...plate };
+      this.newVehicle = false;
     } else {
       console.error('Plate not found');
     } 

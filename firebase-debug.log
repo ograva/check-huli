@@ -1,0 +1,22 @@
+[debug] [2025-06-18T07:58:31.904Z] ----------------------------------------------------------------------
+[debug] [2025-06-18T07:58:31.907Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-06-18T07:58:31.908Z] CLI Version:   14.7.0
+[debug] [2025-06-18T07:58:31.908Z] Platform:      win32
+[debug] [2025-06-18T07:58:31.908Z] Node Version:  v22.15.1
+[debug] [2025-06-18T07:58:31.909Z] Time:          Wed Jun 18 2025 15:58:31 GMT+0800 (Singapore Standard Time)
+[debug] [2025-06-18T07:58:31.909Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-18T07:58:32.162Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-18T07:58:32.162Z] > authorizing via signed-in user (ravago@gmail.com)
+[debug] [2025-06-18T07:58:32.162Z] [iam] checking project check-huli for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-06-18T07:58:32.164Z] Checked if tokens are valid: true, expires at: 1750234532536
+[debug] [2025-06-18T07:58:32.164Z] Checked if tokens are valid: true, expires at: 1750234532536
+[debug] [2025-06-18T07:58:32.165Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/check-huli:testIamPermissions [none]
+[debug] [2025-06-18T07:58:32.165Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/check-huli:testIamPermissions x-goog-quota-user=projects/check-huli
+[debug] [2025-06-18T07:58:32.165Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/check-huli:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-18T07:58:33.187Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/check-huli:testIamPermissions 200
+[debug] [2025-06-18T07:58:33.188Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/check-huli:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-18T07:58:33.188Z] Checked if tokens are valid: true, expires at: 1750234532536
+[debug] [2025-06-18T07:58:33.188Z] Checked if tokens are valid: true, expires at: 1750234532536
+[debug] [2025-06-18T07:58:33.189Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/check-huli [none]
+[debug] [2025-06-18T07:58:33.568Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/check-huli 200
